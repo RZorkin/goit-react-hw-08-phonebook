@@ -33,9 +33,11 @@ export const ContactForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
 
-    const includeName = contacts.find(user => user.name === name);
+    const includeName = contacts.find(
+      user => user.name.toLowerCase() === name.toLowerCase()
+    );
     if (includeName) {
-      Notify.failure(`${name} is already in contacs`);
+      Notify.failure(`${name} is already in contacts`);
       return;
     }
 
@@ -58,7 +60,7 @@ export const ContactForm = () => {
           className={css.input}
           name="name"
           value={name}
-          pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          pattern="^[0-9]+$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
           onChange={handleChange}
