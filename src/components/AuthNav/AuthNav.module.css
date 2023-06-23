@@ -1,0 +1,12 @@
+.authNav {
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  display: inline-block;
+  font-size: 18px;
+  padding: 12px;
+  color: #aaaaaa;
+  text-decoration: none;
+}
