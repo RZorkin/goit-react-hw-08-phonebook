@@ -30,14 +30,14 @@
 }
 
 .input {
-  border-color: #f7cfd5;
+  border-color: #53a0ed;
   border-radius: 25px;
   border-width: 1px;
   display: block;
   height: 22px;
   margin-top: 5px;
   padding: 5px;
-  width: 200px;
+  width: 300px;
 }
 
 .subtitle {
@@ -46,7 +46,7 @@
 }
 
 .btn {
-  background-color: #f7cfd5;
+  background-color: #53a0ed;
   border-color: inherit;
   border-radius: 25px;
   color: #fff;
@@ -54,4 +54,9 @@
   text-transform: uppercase;
   margin-top: 16px;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #b6dbe4;
+  color: #fff;
 }
